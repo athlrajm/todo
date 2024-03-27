@@ -45,7 +45,7 @@
     display: flex;
     align-items: center;
   }
-  bt1:hover {
+  .bt1:hover {
     background-color: #357ae8; 
   }
   
@@ -56,22 +56,19 @@
     background-color: white;
     
   }
+  
   @media only screen and (max-width: 600px) {
-    .img1 {
-        margin-left: 10px; 
-    }
+   
+      .one {
+          display: block;
+      }
+  
+      .two {
+          display: none;
+      }
+      .bt1{
+        margin-left: 85px;
 
-    .img2 {
-        max-width: 100%; 
-        height: auto; 
-        max-height: 100%;
-    }
-
-    .bt1 {
-        margin: 10px auto; 
-        
-        display: block; 
-        text-align: center;
-        
-    }
+      }
+  
 }
