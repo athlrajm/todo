@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import TodoCard from './TodoCard';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth, db } from '../firebase';
-import { addDoc, collection, doc, onSnapshot } from "firebase/firestore";
+import { addDoc, collection, onSnapshot } from "firebase/firestore";
 import './Body.css'
 import SearchIcon from '@mui/icons-material/Search';
 import TextField from '@mui/material/TextField';
@@ -63,12 +63,13 @@ function Body() {
         <div className='flex'>
 
        <div className='one'>
-       <img className="im1" src="https://i.pinimg.com/736x/4e/f5/d8/4ef5d838ba0931d3b920641918b4bbae.jpg"/>
+       <img className="im1" src="https://i.pinimg.com/736x/4e/f5/d8/4ef5d838ba0931d3b920641918b4bbae.jpg" alt="Todo App Image"/>
        <h1 className='lx'>TODO</h1>
        <p className='p1'>Our Todo App is designed to help you organize your tasks efficiently.<br></br> Whether it's managing your daily chores, keeping track of work assignments,<br></br> or simply jotting down ideas, our app provides a seamless experience <br></br>to keep you organized and productive.</p>
        <br></br>
        </div>
-       <img className="pf" onClick={()=>auth.signOut()} src={user?.photoURL}></img><h7 className="lg" onClick={()=>auth.signOut()}>Log Out</h7>
+       <img className="pf" onClick={()=>auth.signOut()} src={user?.photoURL} alt="User Profile"/>
+       <h7 className="lg" onClick={()=>auth.signOut()}>Log Out</h7>
 
        </div>
 
