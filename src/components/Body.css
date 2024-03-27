@@ -16,6 +16,9 @@ height: 10vh;
 }
 .container {
 display: flex;
+display: flex;
+    flex-direction: column;
+
 align-items: center;
 }
 
@@ -24,6 +27,7 @@ margin-right: 20px;
 border-right: 1px solid #ccc; 
 padding-right: 20px; 
 justify-content: flex-start;
+order: 0;
 }
 
 
@@ -90,6 +94,7 @@ justify-content: flex-start;
   flex-direction: column;
   align-items: center; 
   justify-content: center;
+  order: 1;
   
 }
 
@@ -184,6 +189,7 @@ max-height: 70vh;
   margin-left: 250px;
   font-size: 13px;
 }
+/* }
 @media only screen and (max-width: 600px) {
   .left {
     margin-right: 0;
@@ -232,4 +238,23 @@ max-height: 70vh;
   .tl2 {
     margin-left: 0;
   }
+} */
+@media only screen and (min-width: 600px) {
+  .container {
+      flex-direction: row;
+      align-items: center; 
+  }
+
+  .left {
+      order: 0; 
+  }
+
+  .right {
+      order: 1; 
+  }
+  
+  
+  
+  
 }
+
