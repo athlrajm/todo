@@ -209,15 +209,11 @@ max-height: 70vh;
   }
 
   .lx {
-    margin-left: 0;
+    margin-left: 120px;
     margin-top: 20px;
   }
 
-  .p1 {
-    margin-left: 0;
-    margin-top: 20px;
-    font-size: 14px;
-  }
+  
 
   .inp5 {
     width: 80%;
@@ -252,6 +248,7 @@ max-height: 70vh;
   .right {
       order: 1; 
   }
+  
   
 }
 
