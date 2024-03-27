@@ -64,9 +64,14 @@
     .img2 {
         max-width: 100%; 
         height: auto; 
+        max-height: 100%;
     }
 
     .bt1 {
         margin: 10px auto; 
+        
+        display: block; 
+        text-align: center;
+        
     }
 }
