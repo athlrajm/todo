@@ -189,7 +189,7 @@ max-height: 70vh;
   margin-left: 250px;
   font-size: 13px;
 }
-/* }
+
 @media only screen and (max-width: 600px) {
   .left {
     margin-right: 0;
@@ -205,7 +205,7 @@ max-height: 70vh;
 
   .pf {
     margin-left: 0;
-    margin-top: 20px;
+    margin-top: 45px;
   }
 
   .lx {
@@ -238,7 +238,7 @@ max-height: 70vh;
   .tl2 {
     margin-left: 0;
   }
-} */
+}
 @media only screen and (min-width: 600px) {
   .container {
       flex-direction: row;
@@ -252,9 +252,6 @@ max-height: 70vh;
   .right {
       order: 1; 
   }
-  
-  
-  
   
 }
 
